@@ -5,9 +5,9 @@ let $box2 = document.getElementById('main_cat')
 
 let box2Anim = anime({
 targets: $box2,
-height: ['40vw', '1170vw'],
-width: ['40vw', '1170vw'],
-left: ['30vw', '-595vw'],
+height: ['20vw', '1170vw'],
+width: ['20vw', '1170vw'],
+left: ['40vw', '-595vw'],
 top: ['180px', '-9000px'],
 autoplay: false,
 easing: 'linear'
