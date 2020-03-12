@@ -1,0 +1,12 @@
+
+#first {
+  height: 28000px;
+}
+
+#main_cat {
+  position: relative;
+  height: 40vw;
+  width: 40vw;
+  left: 32vw;
+  top: 150px;
+}
