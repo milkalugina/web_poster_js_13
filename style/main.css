@@ -53,15 +53,46 @@ body {
   margin: 0px -20px 0px -20px;
 }
 
+#cat_on {
+  position: absolute;
+  height: 40vh;
+  width: 16vw;
+  left: 43vw;
+  top: -100vh;
+  display: none;
+  z-index: 2;
+}
+
 #btn_white {
   position: absolute;
   margin: auto;
   left: 40vw;
   top: 50vh;
+}
+@keyframes akkls {
+  0% {
+    transform: translate(0,0vh);
+    }
+  100% {
+    transform: translate(0,122vh);
+    }
+}
 
+@keyframes dldd {
+0% {
+  opacity: 100%;
+  }
+100% {
+  opacity: 0%;
+  }
 }
 
 #btn_black {
+  position: absolute;
+  margin: auto;
+  left: 40vw;
+  top: 50vh;
+  display: none;
 
 }
 
