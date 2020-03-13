@@ -1,7 +1,11 @@
-
+body {
+  overflow-x: hidden;
+}
 #first {
   /* height: 28000px; */
   height: 1500vw;
+  width: 100vw;
+
 }
 
 #main_cat {
@@ -10,4 +14,114 @@
   width: 20vw;
   left: 40vw;
   top: 220px;
+}
+
+#second {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  margin: -20px;
+}
+
+#third {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  margin: -20px;
+}
+
+#fourth {
+  position: relative;
+  background-image: url('../img/backgr.svg');
+  height: 110vh;
+  background-size: cover;
+  margin: -20px;
+}
+
+#cards {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  margin: -20px;
+}
+
+#fifth {
+  position: relative;
+  background-color: #FF7B7B;
+  height: 100vh;
+  margin: 0px -20px 0px -20px;
+}
+
+#btn_white {
+  position: absolute;
+  margin: auto;
+  left: 40vw;
+  top: 50vh;
+
+}
+
+#btn_black {
+
+}
+
+#window {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  margin: -20px;
+}
+
+#sixth {
+  height: 100vh;
+  background-image: url('../img/backgr_2.svg');
+  background-size: cover;
+  margin: -20px;
+  margin-top: -20px;
+}
+
+#seventh {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  margin: -20px;
+}
+
+#home {
+  position: absolute;
+  height: 30vh;
+  width: 29vw;
+  top: 70vh;
+  left: 73.8vw;
+}
+
+#primetnaya {
+  position: absolute;
+  height: 35vh;
+  width: 40vw;
+  top: 65vh;
+  left: 0.9vw;
+}
+
+#omen {
+  position: absolute;
+  height: 50vh;
+  width: 60vw;
+  top: 44.2vh;
+  left: 37.9vw;
+}
+
+#time {
+  position: absolute;
+  height: 34vh;
+  width: 41vw;
+  top: 25vh;
+  left: 44vw;
+}
+
+#museum {
+  position: absolute;
+  height: 70vh;
+  width: 38vw;
+  top: 3vh;
+  left: 4vw;
 }
