@@ -1,12 +1,13 @@
 
 #first {
-  height: 28000px;
+  /* height: 28000px; */
+  height: 1500vw;
 }
 
 #main_cat {
   position: relative;
-  height: 40vw;
-  width: 40vw;
-  left: 32vw;
-  top: 150px;
+  height: 20vw;
+  width: 20vw;
+  left: 40vw;
+  top: 220px;
 }
