@@ -1,4 +1,4 @@
-
+ // cats_scroll
 let controller = new ScrollMagic.Controller()
 
 let $box2 = document.getElementById('main_cat')
@@ -6,17 +6,17 @@ let $box2 = document.getElementById('main_cat')
 let box2Anim = anime({
 targets: $box2,
 // height: ['0vw', '300vh'],
-scale: 90,
+scale: 215,
 // left: ['50%', '50%'],
 // top: ['20px', '-50%'],
 autoplay: false,
 easing: 'easeInSine'
 })
 
-let $section2 = document.getElementById('first')
+let $section2 = document.getElementById('cats_scroll')
 
 new ScrollMagic.Scene({
-triggerElement: '#first',
+triggerElement: '#cats_scroll',
 duration: $section2.getBoundingClientRect().height
 })
 .addTo(controller)
@@ -25,9 +25,46 @@ duration: $section2.getBoundingClientRect().height
   box2Anim.seek(box2Anim.duration * (event.progress * 1))
 })
 
-document.getElementById('btn_white').onclick = function() { document.getElementById('btn_black').style.display = 'block';
-document.getElementById('cat_on').style.display = 'block'
-document.getElementById('cat_on').style.animation = `aniCat 1s ease-in 1 forwards`
+
+document.getElementById('white_screen--02').onclick = function() {
+  document.getElementById('black_screen--01').style.display = 'block';
+  document.getElementById('black_screen--04').style.display = 'block';
+}
+document.getElementById('white_screen--03').onclick = function() {
+  document.getElementById('black_screen--02').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('black_screen--04').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('white_screen--04').onclick = function() {
+  document.getElementById('black_screen--03').style.display = 'block';
+  document.getElementById('black_screen--02').style.display = 'block';
+}
+
+
+document.getElementById('black_screen--01').onclick = function() {
+  document.getElementById('white_screen--05').style.display = 'block';
+  document.getElementById('white_screen--05').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('black_screen--02').onclick = function() {
+  document.getElementById('white_screen--06').style.display = 'block';
+  document.getElementById('white_screen--06').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('black_screen--03').onclick = function() {
+  document.getElementById('white_screen--07').style.display = 'block';
+  document.getElementById('white_screen--07').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('black_screen--04').onclick = function() {
+  document.getElementById('white_screen--08').style.display = 'block';
+  document.getElementById('white_screen--08').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+// кнопка
+document.getElementById('btn_white').onclick = function() { document.getElementById('btn_black').style.display = 'flex';
+document.getElementById('cat_on').style.display = 'block';
+document.getElementById('cat_on').style.animation = `aniCat 1s ease-in 1 forwards`;
  }
 
 
