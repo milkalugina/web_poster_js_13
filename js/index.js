@@ -84,9 +84,48 @@ document.getElementById('cats_all').style.display = 'block'
 }
 
 // Сколько создавать карт
-const CARDS_NUMBER = 10
+const CARDS_NUMBER = 36
 // Название файлов с картами
 let cards = [
+  '../img/1_card.svg',
+  '../img/2_card.svg',
+  '../img/3_card.svg',
+  '../img/4_card.svg',
+  '../img/5_card.svg',
+  '../img/6_card.svg',
+  '../img/7_card.svg',
+  '../img/8_card.svg',
+  '../img/9_card.svg',
+  '../img/10_card.svg',
+  '../img/11_card.svg',
+  '../img/12_card.svg',
+  '../img/13_card.svg',
+  '../img/1_card.svg',
+  '../img/2_card.svg',
+  '../img/3_card.svg',
+  '../img/4_card.svg',
+  '../img/5_card.svg',
+  '../img/6_card.svg',
+  '../img/7_card.svg',
+  '../img/8_card.svg',
+  '../img/9_card.svg',
+  '../img/10_card.svg',
+  '../img/11_card.svg',
+  '../img/12_card.svg',
+  '../img/13_card.svg',
+  '../img/1_card.svg',
+  '../img/2_card.svg',
+  '../img/3_card.svg',
+  '../img/4_card.svg',
+  '../img/5_card.svg',
+  '../img/6_card.svg',
+  '../img/7_card.svg',
+  '../img/8_card.svg',
+  '../img/9_card.svg',
+  '../img/10_card.svg',
+  '../img/11_card.svg',
+  '../img/12_card.svg',
+  '../img/13_card.svg',
   '../img/1_card.svg',
   '../img/2_card.svg',
   '../img/3_card.svg',
@@ -107,6 +146,7 @@ function shuffle(cards) {
     let j = Math.floor(Math.random() * (i + 1));
     [cards[i], cards[j]] = [cards[j], cards[i]];
   }
+  return cards
 }
 // Применяем функцию перемешивания
 cards = shuffle(cards)
@@ -118,12 +158,12 @@ let cardsContainer = document.getElementById('third__cards-container')
 for (let i = 0; i < CARDS_NUMBER; i++) {
   let newCard = document.createElement('img')
 
-  img.style.width = '20vw'
-  img.style.height = '20vh'
+
 
   newCard.src = `img/${cards[i]}`
   newCard.classList.add('card')
-  newCard.onclick = function() {
+  newCard.onclick = function(event) {
+    event.target.style.transform =  `translate(${anime.random(-55,55)}vw,${anime.random(-55,55)}vh) rotate(${anime.random(0, 360)}deg)`
 
   }
   cardsContainer.append(newCard)

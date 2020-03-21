@@ -45,28 +45,26 @@ section {
   overflow-y: hidden;
 }
 
-
-
 #cat_first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   position: absolute;
-  width: 40vw;
-  left: 1.2vw;
-  height: 67vh;
-  top: 28vh;
 }
 
 #cats_all {
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  left: 1.2vw;
-  height: 160vh;
   position: absolute;
   display: none;
 }
 
 #cats_all_negative {
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  left: 1.2vw;
-  height: 160vh;
   position: absolute;
   display: none;
 }
@@ -89,17 +87,26 @@ section {
 
 #cards {
   position: relative;
-  height: 100vh;
   background-color: black;
-  margin: -20px;
+  z-index: 3;
+  overflow-x: hidden;
 }
 
 #third__cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+  overflow-x: hidden;
+  margin-top: -5px;
+}
+
+.card {
   position: absolute;
-  top: 5vh;
-  left: 20vw;
-  height: 15vh;
-  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all ease;
 }
 
 #fifth {
@@ -158,9 +165,9 @@ section {
 
 #window {
   position: relative;
-  height: 100vh;
+  height: 40vh;
   background-color: black;
-  /* margin: -20px; */
+  margin-bottom: -10px;
 }
 
 #sixth {
@@ -272,5 +279,33 @@ section {
   }
 100% {
   opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  #main_cat {
+    height: 40vh;
+  }
+
+  #second {
+    height: 140vh;
+  }
+
+  #cat_on {
+    top: -95vh;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1450px) {
+  #main_cat {
+    height: 37vh;
+  }
+
+  #second {
+    height: 126vh;
+  }
+
+  #cat_on {
+    top: -93vh;
   }
 }
