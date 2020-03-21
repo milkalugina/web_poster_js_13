@@ -25,7 +25,7 @@ duration: $section2.getBoundingClientRect().height
   box2Anim.seek(box2Anim.duration * (event.progress * 1))
 })
 
-
+// screen_generator
 document.getElementById('white_screen--02').onclick = function() {
   document.getElementById('black_screen--01').style.display = 'block';
   document.getElementById('black_screen--04').style.display = 'block';
@@ -66,6 +66,24 @@ document.getElementById('black_screen--03').onclick = function() {
   document.getElementById('white_screen--11').style.display = 'block';
   document.getElementById('white_screen--11').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
 }
+
+
+document.getElementById('white_screen--09').onclick = function() {
+  document.getElementById('white_screen--01').style.display = 'block';
+  document.getElementById('white_screen--01').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--03').style.display = 'block';
+  document.getElementById('white_screen--03').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+document.getElementById('white_screen--10').onclick = function() {
+  document.getElementById('white_screen--02').style.display = 'block';
+  document.getElementById('white_screen--02').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+document.getElementById('white_screen--11').onclick = function() {
+  document.getElementById('white_screen--04').style.display = 'block';
+  document.getElementById('white_screen--04').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+
 
 // кнопка
 document.getElementById('btn_white').onclick = function() { document.getElementById('btn_black').style.display = 'flex';
