@@ -58,9 +58,10 @@ section {
 }
 
 #window {
+  overflow: hidden;
   position: relative;
-  height: 20vh;
-  background-color: black;
+  height: 40vh;
+  background: black;
   margin-bottom: -10px;
 }
 
@@ -106,30 +107,40 @@ section {
 }
 
 #white_screen--01 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: -5vw;
   top: 10vh;
 }
 
 #white_screen--02 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 2vw;
   top: 14vh;
 }
 
 #white_screen--03 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 10vw;
   top: 20vh;
 }
 
 #white_screen--04 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 14vw;
   top: 7vh;
 }
 
 #white_screen--05 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 55vw;
   top: 14vh;
@@ -137,6 +148,8 @@ section {
 }
 
 #white_screen--06 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 60vw;
   top: 20vh;
@@ -144,6 +157,8 @@ section {
 }
 
 #white_screen--07 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 70vw;
   top: 7vh;
@@ -151,6 +166,8 @@ section {
 }
 
 #white_screen--08 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 90vw;
   top: 20vh;
@@ -158,6 +175,8 @@ section {
 }
 
 #white_screen--09 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 50vw;
   top: 10vh;
@@ -165,6 +184,8 @@ section {
 }
 
 #white_screen--10 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 10vw;
   top: 20vh;
@@ -172,6 +193,8 @@ section {
 }
 
 #white_screen--11 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 50vw;
   top: 30vh;
@@ -179,6 +202,8 @@ section {
 }
 
 #black_screen--01 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 20vw;
   top: 24vh;
@@ -186,6 +211,8 @@ section {
 }
 
 #black_screen--02 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 27vw;
   top: 34vh;
@@ -193,6 +220,8 @@ section {
 }
 
 #black_screen--03 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 36vw;
   top: 30vh;
@@ -200,6 +229,8 @@ section {
 }
 
 #black_screen--04 {
+  height: 55vh;
+  width: 55vw;
   position: absolute;
   left: 30vw;
   top: 10vh;
@@ -220,7 +251,6 @@ section {
   position: absolute;
   height: 40vh;
   width: 16vw;
-  left: 42.5vw;
   top: -98vh;
   display: none;
   z-index: 2;
