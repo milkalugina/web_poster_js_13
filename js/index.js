@@ -117,6 +117,10 @@ let cardsContainer = document.getElementById('third__cards-container')
 // При помощи цикла создаем карты и вставляем внутрь контейнера
 for (let i = 0; i < CARDS_NUMBER; i++) {
   let newCard = document.createElement('img')
+
+  img.style.width = '20vw'
+  img.style.height = '20vh'
+
   newCard.src = `img/${cards[i]}`
   newCard.classList.add('card')
   newCard.onclick = function() {

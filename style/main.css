@@ -83,8 +83,8 @@ section {
   background-image: url('../img/backgr.svg');
   height: 120vh;
   background-size: cover;
-  /* margin: -2px; */
   z-index: -2;
+  margin-top: -2px;
 }
 
 #cards {
@@ -106,7 +106,7 @@ section {
   position: relative;
   background-color: #FF7B7B;
   height: 100vh;
-
+  margin-top: -2px;
 }
 
 #cat_on {
