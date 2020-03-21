@@ -157,6 +157,27 @@ section {
   display: none;
 }
 
+#white_screen--09 {
+  position: absolute;
+  left: 50vw;
+  top: 10vh;
+  display: none;
+}
+
+#white_screen--10 {
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  display: none;
+}
+
+#white_screen--11 {
+  position: absolute;
+  left: 50vw;
+  top: 30vh;
+  display: none;
+}
+
 #black_screen--01 {
   position: absolute;
   left: 20vw;

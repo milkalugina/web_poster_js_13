@@ -49,16 +49,22 @@ document.getElementById('black_screen--01').onclick = function() {
 document.getElementById('black_screen--02').onclick = function() {
   document.getElementById('white_screen--06').style.display = 'block';
   document.getElementById('white_screen--06').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--09').style.display = 'block';
+  document.getElementById('white_screen--09').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
 }
 
 document.getElementById('black_screen--03').onclick = function() {
   document.getElementById('white_screen--07').style.display = 'block';
   document.getElementById('white_screen--07').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--10').style.display = 'block';
+  document.getElementById('white_screen--10').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
 }
 
-document.getElementById('black_screen--04').onclick = function() {
+document.getElementById('black_screen--03').onclick = function() {
   document.getElementById('white_screen--08').style.display = 'block';
   document.getElementById('white_screen--08').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--11').style.display = 'block';
+  document.getElementById('white_screen--11').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
 }
 
 // кнопка
