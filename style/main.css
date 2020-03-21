@@ -102,6 +102,7 @@ section {
   position: relative;
   background-color: #FF7B7B;
   height: 120vh;
+  margin-top: -5px;
 }
 
 #white_screen--01 {
