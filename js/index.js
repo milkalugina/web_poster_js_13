@@ -84,7 +84,6 @@ document.getElementById('white_screen--11').onclick = function() {
 }
 
 
-
 // кнопка
 document.getElementById('btn_white').onclick = function() { document.getElementById('btn_black').style.display = 'flex';
 document.getElementById('cat_on').style.display = 'block';
@@ -128,22 +127,27 @@ document.getElementById('time_cup').style.animation = `fjfj 0.5s ease-in-out 1 f
 document.getElementById('cat_first').onclick = function(){
 document.getElementById('second').style.backgroundColor = `white`;
 document.getElementById('cats_all').style.display = 'block'
+document.getElementById('cats_all--02').style.display = 'block'
 document.getElementById('window').style.background = 'linear-gradient(to top, #000000, #FFFFFF)';
 }
 
 document.getElementById('cats_all').onclick = function(){
 document.getElementById('second').style.backgroundColor = `black`;
 document.getElementById('cat_first').style.display = 'none';
-document.getElementById('cats_all_negative').style.display = 'block';
+document.getElementById('cats_all_negative').style.display = 'inline-block';
+document.getElementById('cats_all_negative--02').style.display = 'inline-block';
 document.getElementById('cats_all').style.display = 'none';
+document.getElementById('cats_all--02').style.display = 'none';
 document.getElementById('window').style.background = `black`;
 }
 
 document.getElementById('cats_all_negative').onclick = function(){
 document.getElementById('second').style.backgroundColor = `white`;
 document.getElementById('cats_all_negative').style.display = 'none'
+document.getElementById('cats_all_negative--02').style.display = 'none'
 document.getElementById('cat_first').style.display = 'none'
-document.getElementById('cats_all').style.display = 'block'
+document.getElementById('cats_all').style.display = 'inline-block'
+document.getElementById('cats_all--02').style.display = 'inline-block'
 document.getElementById('window').style.background = 'linear-gradient(to top, #000000, #FFFFFF)';
 }
 
