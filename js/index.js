@@ -6,7 +6,7 @@ let $box2 = document.getElementById('main_cat')
 let box2Anim = anime({
 targets: $box2,
 // height: ['0vw', '300vh'],
-scale: 215,
+scale: 218,
 // left: ['50%', '50%'],
 // top: ['20px', '-50%'],
 autoplay: false,
@@ -122,8 +122,7 @@ document.getElementById('time_cup').onclick = function(){
 document.getElementById('time_cup').style.animation = `fjfj 0.5s ease-in-out 1 forwards`
 }
 
-
-
+// коты
 document.getElementById('cat_first').onclick = function(){
 document.getElementById('second').style.backgroundColor = `white`;
 document.getElementById('cats_all').style.display = 'block'
@@ -141,7 +140,27 @@ document.getElementById('cats_all--02').style.display = 'none';
 document.getElementById('window').style.background = `black`;
 }
 
+document.getElementById('cats_all--02').onclick = function(){
+document.getElementById('second').style.backgroundColor = `black`;
+document.getElementById('cat_first').style.display = 'none';
+document.getElementById('cats_all_negative').style.display = 'inline-block';
+document.getElementById('cats_all_negative--02').style.display = 'inline-block';
+document.getElementById('cats_all').style.display = 'none';
+document.getElementById('cats_all--02').style.display = 'none';
+document.getElementById('window').style.background = `black`;
+}
+
 document.getElementById('cats_all_negative').onclick = function(){
+document.getElementById('second').style.backgroundColor = `white`;
+document.getElementById('cats_all_negative').style.display = 'none'
+document.getElementById('cats_all_negative--02').style.display = 'none'
+document.getElementById('cat_first').style.display = 'none'
+document.getElementById('cats_all').style.display = 'inline-block'
+document.getElementById('cats_all--02').style.display = 'inline-block'
+document.getElementById('window').style.background = 'linear-gradient(to top, #000000, #FFFFFF)';
+}
+
+document.getElementById('cats_all_negative--02').onclick = function(){
 document.getElementById('second').style.backgroundColor = `white`;
 document.getElementById('cats_all_negative').style.display = 'none'
 document.getElementById('cats_all_negative--02').style.display = 'none'
