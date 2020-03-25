@@ -264,8 +264,10 @@ let $catGoes = document.getElementById('cats_goes')
 
 let catGoes2Anim = anime({
   targets: $catGoes,
-  height: ['20vw', '20vw'],
-  width: ['20vw', '20vw'],
+  translateY: ['0vw', '0vw'],
+  height: '40vw',
+  width: '40vw',
+  top: ['35vw', '0vw'],
   left: ['105vw', '-40vw'],
   autoplay: false,
   easing: 'easeInOutQuad'
@@ -292,9 +294,11 @@ let $noSings1 = document.getElementById('no_sings')
 let sings2Anim = anime({
   targets: $noSings1,
   translateY: ['0vw', '0vw'],
-  height: ['20vw', '20vw'],
-  width: ['20vw', '20vw'],
-  right: ['105vw', '-40vw'],
+  top: ['0', '0vw'],
+  height: ['60vh', '60vh'],
+  width: ['186vw', '186vw'],
+  right: ['205vw', '-300vw'],
+  position: 'relative',
   autoplay: false,
   easing: 'easeInOutQuad'
 })

@@ -315,22 +315,19 @@ section {
 
 #sixth {
   background: linear-gradient(to top, #000000, #FF7B7B);
-  height: 60vh;
+  height: 100vh;
   background-size: cover;
 }
 
 #no_sings {
-  /* position: absolute; */
-  height: 20vh;
-  right: 109vw;
-  margin-top: 20vh;
+  right: 59vw;
+  margin-top: 10vh;
 }
 
 }
 
 #cats_goes {
-  width: 20vw;
-  /* position: absolute; */
+
 }
 
 #seventh {
