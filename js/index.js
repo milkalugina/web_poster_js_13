@@ -5,10 +5,7 @@ let $catsScroll = document.getElementById('main_cat')
 
 let catsScrollAnim = anime({
 targets: $catsScroll,
-// height: ['0vw', '300vh'],
 scale: 218,
-// left: ['50%', '50%'],
-// top: ['20px', '-50%'],
 autoplay: false,
 easing: 'easeInSine'
 })
@@ -264,13 +261,12 @@ let $catGoes = document.getElementById('cats_goes')
 
 let catGoes2Anim = anime({
   targets: $catGoes,
-  translateY: ['0vw', '0vw'],
-  height: '40vw',
-  width: '40vw',
-  top: ['35vw', '0vw'],
-  left: ['105vw', '-40vw'],
+  height: ['76vh', '76vh'],
+  width: ['40vw', '40vw'],
+  top: '-20vh',
+  translateX: ['155vw', '-120vw'],
   autoplay: false,
-  easing: 'easeInOutQuad'
+  easing: 'linear'
 })
 
 let $section6 = document.getElementById('sixth')
@@ -297,8 +293,8 @@ let sings2Anim = anime({
   top: ['0', '0vw'],
   height: ['60vh', '60vh'],
   width: ['186vw', '186vw'],
-  right: ['205vw', '-300vw'],
-  position: 'relative',
+  right: ['205vw', '-500vw'],
+  position: 'relative important!',
   autoplay: false,
   easing: 'easeInOutQuad'
 })
