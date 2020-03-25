@@ -1,10 +1,10 @@
  // cats_scroll
 let controller = new ScrollMagic.Controller()
 
-let $box2 = document.getElementById('main_cat')
+let $catsScroll = document.getElementById('main_cat')
 
-let box2Anim = anime({
-targets: $box2,
+let catsScrollAnim = anime({
+targets: $catsScroll,
 // height: ['0vw', '300vh'],
 scale: 218,
 // left: ['50%', '50%'],
@@ -13,16 +13,16 @@ autoplay: false,
 easing: 'easeInSine'
 })
 
-let $section2 = document.getElementById('cats_scroll')
+let $section1 = document.getElementById('cats_scroll')
 
 new ScrollMagic.Scene({
 triggerElement: '#cats_scroll',
-duration: $section2.getBoundingClientRect().height
+duration: $section1.getBoundingClientRect().height
 })
 .addTo(controller)
-.setPin($box2)
+.setPin($catsScroll)
 .on('progress', function(event) {
-  box2Anim.seek(box2Anim.duration * (event.progress * 1))
+  catsScrollAnim.seek(catsScrollAnim.duration * (event.progress * 1))
 })
 
 // screen_generator
@@ -255,3 +255,58 @@ for (let i = 0; i < CARDS_NUMBER; i++) {
   }
   cardsContainer.append(newCard)
 }
+
+
+//catGoes
+let catGoes1 = new ScrollMagic.Controller()
+
+let $catGoes = document.getElementById('cats_goes')
+
+let catGoes2Anim = anime({
+  targets: $catGoes,
+  height: ['20vw', '20vw'],
+  width: ['20vw', '20vw'],
+  left: ['105vw', '-40vw'],
+  autoplay: false,
+  easing: 'easeInOutQuad'
+})
+
+let $section6 = document.getElementById('sixth')
+
+new ScrollMagic.Scene({
+triggerElement: '#sixth',
+duration: $section6.getBoundingClientRect().height
+})
+.addTo(catGoes1)
+.setPin($catGoes)
+.on('progress', function(event) {
+catGoes2Anim.seek(catGoes2Anim.duration * event.progress)
+})
+
+
+//no_sings
+let noSings = new ScrollMagic.Controller()
+
+let $noSings1 = document.getElementById('no_sings')
+
+let sings2Anim = anime({
+  targets: $noSings1,
+  translateY: ['0vw', '0vw'],
+  height: ['20vw', '20vw'],
+  width: ['20vw', '20vw'],
+  right: ['105vw', '-40vw'],
+  autoplay: false,
+  easing: 'easeInOutQuad'
+})
+
+let $section62 = document.getElementById('sixth')
+
+new ScrollMagic.Scene({
+triggerElement: '#sixth',
+duration: $section62.getBoundingClientRect().height
+})
+.addTo(noSings)
+.setPin($noSings1)
+.on('progress', function(event) {
+sings2Anim.seek(sings2Anim.duration * event.progress)
+})
