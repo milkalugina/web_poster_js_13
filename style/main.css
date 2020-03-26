@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.pointer {
+  cursor: url('../img/cursor.png'), default;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -412,7 +416,7 @@ section {
   left: 9.5vw;
 }
 
-@keyframes fjfj {
+@keyframes disappears {
 0% {
   opacity: 1;
   }
@@ -421,16 +425,8 @@ section {
   }
 }
 
-@keyframes jf {
-0% {
-  opacity: 0;
-  }
-100% {
-  opacity: 1;
-  }
-}
-/* готово */
 @media screen and (min-width: 1681px)  and (max-width: 1920px) {
+
   #main_cat {
     height: 35vh;
   }
@@ -505,8 +501,9 @@ section {
     left: 8vw;
   }
 }
-/* готово */
+
 @media screen and (min-width: 1441px) and (max-width: 1680px) {
+
   #main_cat {
     height: 28vh;
   }
@@ -582,13 +579,9 @@ section {
     left: 7vw;
   }
 }
-/* готово */
+
 @media screen and (min-width: 1367px) and (max-width: 1440px) {
 
-  body {
-    min-height: 768px;
-    max-height: 900px
-  }
   #main_cat {
     height: 30vh;
   }
@@ -663,8 +656,9 @@ section {
     left: 7vw;
   }
 }
-/* готово */
+
 @media screen and (min-width: 1281px) and (max-width: 1366px) {
+
   #main_cat {
     height: 35vh;
   }
@@ -744,8 +738,9 @@ section {
     left: 7vw;
   }
 }
-/* готово */
+
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
+
   #main_cat {
     height: 30vh;
   }
@@ -828,7 +823,7 @@ section {
     left: 7vw;
   }
 }
-/* нет */
+
 @media screen and (min-width: 901px) and (max-width: 1024px) {
   #main_cat {
     height: 28vh;
@@ -912,7 +907,7 @@ section {
     left: 7vw;
   }
 }
-/* нет ЭТО МЕЖДУ ДВУМЯ ЭКРАНАМИ*/
+
 @media screen and (min-width: 769px) and (max-width: 900px) {
   #main_cat {
     height: 10vh;
@@ -989,7 +984,7 @@ section {
     left: 7vw;
   }
 }
-/* нет */
+
 @media screen and (min-width: 415px) and (max-width: 768px) {
 
   #main_cat {
@@ -1110,250 +1105,250 @@ section {
     left: 2.8vw;
   }
 }
-/* нет */
+
 @media screen and (min-width: 376px) and (max-width: 414px) {
 
-    #cats_scroll {
-      height: 800vw;
-    }
+  #cats_scroll {
+    height: 800vw;
+  }
 
-    #main_cat {
-      height: 10vh;
-    }
+  #main_cat {
+    height: 10vh;
+  }
 
-    #second {
-      height: 115vh;
-    }
+  #second {
+    height: 115vh;
+  }
 
-    #window {
-      height: 35vh;
-    }
+  #window {
+    height: 35vh;
+  }
 
-    #cat_on {
-      top: -98vh;
-      height: 38vh;
-    }
+  #cat_on {
+    top: -98vh;
+    height: 38vh;
+  }
 
-    #fourth {
-      height: 25vh;
-    }
+  #fourth {
+    height: 25vh;
+  }
 
-    .card{
-      height: 35vh;
-    }
+  .card{
+    height: 35vh;
+  }
 
-    #white_screen--01,
-    #white_screen--02,
-    #white_screen--03,
-    #white_screen--04,
-    #white_screen--05,
-    #white_screen--06,
-    #white_screen--07,
-    #white_screen--08,
-    #white_screen--09,
-    #white_screen--10,
-    #white_screen--11,
-    #black_screen--01,
-    #black_screen--02,
-    #black_screen--03,
-    #black_screen--04 {
-      height: 50vh;
-    }
+  #white_screen--01,
+  #white_screen--02,
+  #white_screen--03,
+  #white_screen--04,
+  #white_screen--05,
+  #white_screen--06,
+  #white_screen--07,
+  #white_screen--08,
+  #white_screen--09,
+  #white_screen--10,
+  #white_screen--11,
+  #black_screen--01,
+  #black_screen--02,
+  #black_screen--03,
+  #black_screen--04 {
+    height: 50vh;
+  }
 
-    #home {
-      position: absolute;
-      height: 18vh;
-      width: 39vw;
-      top: 85vh;
-      left: 60.8vw;
-    }
+  #home {
+    position: absolute;
+    height: 18vh;
+    width: 39vw;
+    top: 85vh;
+    left: 60.8vw;
+  }
 
-    #primetnaya {
-      position: absolute;
-      height: 25vh;
-      width: 62vw;
-      top: 68vh;
-      left: 0.9vw;
-    }
+  #primetnaya {
+    position: absolute;
+    height: 25vh;
+    width: 62vw;
+    top: 68vh;
+    left: 0.9vw;
+  }
 
-    #omen {
-      position: absolute;
-      height: 27vh;
-      width: 78vw;
-      top: 48.2vh;
-      left: 21.9vw;
-    }
+  #omen {
+    position: absolute;
+    height: 27vh;
+    width: 78vw;
+    top: 48.2vh;
+    left: 21.9vw;
+  }
 
-    #time {
-      position: absolute;
-      height: 19vh;
-      width: 56vw;
-      top: 38vh;
-      left: 24vw;
-    }
+  #time {
+    position: absolute;
+    height: 19vh;
+    width: 56vw;
+    top: 38vh;
+    left: 24vw;
+  }
 
-    #museum {
-      position: absolute;
-      height: 43vh;
-      width: 52vw;
-      top: 9vh;
-      left: 0vw;
-    }
+  #museum {
+    position: absolute;
+    height: 43vh;
+    width: 52vw;
+    top: 9vh;
+    left: 0vw;
+  }
 
-    #home_cup {
-      height: 14vh;
-      width: 33vw;
-      top: 87vh;
-      left: 63.8vw;
-    }
+  #home_cup {
+    height: 14vh;
+    width: 33vw;
+    top: 87vh;
+    left: 63.8vw;
+  }
 
-    #primetnaya_cup {
-      height: 20.9vh;
-      width: 57.5vw;
-      top: 70vh;
-      left: 2.4vw;
-    }
+  #primetnaya_cup {
+    height: 20.9vh;
+    width: 57.5vw;
+    top: 70vh;
+    left: 2.4vw;
+  }
 
-    #omen_cup {
-      height: 24vh;
-      width: 74vw;
-      top: 49.7vh;
-      left: 23.8vw;
-    }
+  #omen_cup {
+    height: 24vh;
+    width: 74vw;
+    top: 49.7vh;
+    left: 23.8vw;
+  }
 
-    #time_cup {
-      height: 16vh;
-      width: 50vw;
-      top: 39.5vh;
-      left: 27vw;
-    }
+  #time_cup {
+    height: 16vh;
+    width: 50vw;
+    top: 39.5vh;
+    left: 27vw;
+  }
 
-    #museum_cup {
-      height: 39.7vh;
-      width: 47vw;
-      top: 10vh;
-      left: 2.8vw;
-    }
+  #museum_cup {
+    height: 39.7vh;
+    width: 47vw;
+    top: 10vh;
+    left: 2.8vw;
+  }
 
 }
-/* нет */
+
 @media screen and (min-width: 320px) and (max-width: 375px) {
 
-    #cats_scroll {
-      height: 750vw;
-    }
+  #cats_scroll {
+    height: 750vw;
+  }
 
-    #main_cat {
-      height: 12vh;
-    }
+  #main_cat {
+    height: 12vh;
+  }
 
-    #second {
-      height: 93vh;
-    }
+  #second {
+    height: 93vh;
+  }
 
-    #cat_on {
-      top: -98vh;
-      height: 38vh;
-    }
+  #cat_on {
+    top: -98vh;
+    height: 38vh;
+  }
 
-    #fourth {
-      height: 25vh;
-    }
+  #fourth {
+    height: 25vh;
+  }
 
-    .card{
-      height: 35vh;
-    }
+  .card{
+    height: 35vh;
+  }
 
-    #white_screen--01,
-    #white_screen--02,
-    #white_screen--03,
-    #white_screen--04,
-    #white_screen--05,
-    #white_screen--06,
-    #white_screen--07,
-    #white_screen--08,
-    #white_screen--09,
-    #white_screen--10,
-    #white_screen--11,
-    #black_screen--01,
-    #black_screen--02,
-    #black_screen--03,
-    #black_screen--04 {
-      height: 50vh;
-    }
+  #white_screen--01,
+  #white_screen--02,
+  #white_screen--03,
+  #white_screen--04,
+  #white_screen--05,
+  #white_screen--06,
+  #white_screen--07,
+  #white_screen--08,
+  #white_screen--09,
+  #white_screen--10,
+  #white_screen--11,
+  #black_screen--01,
+  #black_screen--02,
+  #black_screen--03,
+  #black_screen--04 {
+    height: 50vh;
+  }
 
-    #home {
-      position: absolute;
-      height: 18vh;
-      width: 39vw;
-      top: 85vh;
-      left: 60.8vw;
-    }
+  #home {
+    position: absolute;
+    height: 18vh;
+    width: 39vw;
+    top: 85vh;
+    left: 60.8vw;
+  }
 
-    #primetnaya {
-      position: absolute;
-      height: 25vh;
-      width: 62vw;
-      top: 68vh;
-      left: 0.9vw;
-    }
+  #primetnaya {
+    position: absolute;
+    height: 25vh;
+    width: 62vw;
+    top: 68vh;
+    left: 0.9vw;
+  }
 
-    #omen {
-      position: absolute;
-      height: 27vh;
-      width: 78vw;
-      top: 48.2vh;
-      left: 21.9vw;
-    }
+  #omen {
+    position: absolute;
+    height: 27vh;
+    width: 78vw;
+    top: 48.2vh;
+    left: 21.9vw;
+  }
 
-    #time {
-      position: absolute;
-      height: 19vh;
-      width: 56vw;
-      top: 38vh;
-      left: 24vw;
-    }
+  #time {
+    position: absolute;
+    height: 19vh;
+    width: 56vw;
+    top: 38vh;
+    left: 24vw;
+  }
 
-    #museum {
-      position: absolute;
-      height: 43vh;
-      width: 52vw;
-      top: 9vh;
-      left: 0vw;
-    }
+  #museum {
+    position: absolute;
+    height: 43vh;
+    width: 52vw;
+    top: 9vh;
+    left: 0vw;
+  }
 
-    #home_cup {
-      height: 14vh;
-      width: 33vw;
-      top: 87vh;
-      left: 63.8vw;
-    }
+  #home_cup {
+    height: 14vh;
+    width: 33vw;
+    top: 87vh;
+    left: 63.8vw;
+  }
 
-    #primetnaya_cup {
-      height: 20.9vh;
-      width: 57.5vw;
-      top: 70vh;
-      left: 2.4vw;
-    }
+  #primetnaya_cup {
+    height: 20.9vh;
+    width: 57.5vw;
+    top: 70vh;
+    left: 2.4vw;
+  }
 
-    #omen_cup {
-      height: 24vh;
-      width: 74vw;
-      top: 49.7vh;
-      left: 23.8vw;
-    }
+  #omen_cup {
+    height: 24vh;
+    width: 74vw;
+    top: 49.7vh;
+    left: 23.8vw;
+  }
 
-    #time_cup {
-      height: 16vh;
-      width: 50vw;
-      top: 39.5vh;
-      left: 27vw;
-    }
+  #time_cup {
+    height: 16vh;
+    width: 50vw;
+    top: 39.5vh;
+    left: 27vw;
+  }
 
-    #museum_cup {
-      height: 39.7vh;
-      width: 47vw;
-      top: 10vh;
-      left: 2.8vw;
-    }
+  #museum_cup {
+    height: 39.7vh;
+    width: 47vw;
+    top: 10vh;
+    left: 2.8vw;
+  }
 }

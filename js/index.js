@@ -22,104 +22,7 @@ duration: $section1.getBoundingClientRect().height
   catsScrollAnim.seek(catsScrollAnim.duration * (event.progress * 1))
 })
 
-// screen_generator
-document.getElementById('white_screen--02').onclick = function() {
-  document.getElementById('black_screen--01').style.display = 'block';
-  document.getElementById('black_screen--04').style.display = 'block';
-}
-document.getElementById('white_screen--03').onclick = function() {
-  document.getElementById('black_screen--02').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-  document.getElementById('black_screen--04').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-
-document.getElementById('white_screen--04').onclick = function() {
-  document.getElementById('black_screen--03').style.display = 'block';
-  document.getElementById('black_screen--02').style.display = 'block';
-}
-
-
-document.getElementById('black_screen--01').onclick = function() {
-  document.getElementById('white_screen--05').style.display = 'block';
-  document.getElementById('white_screen--05').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-
-document.getElementById('black_screen--02').onclick = function() {
-  document.getElementById('white_screen--06').style.display = 'block';
-  document.getElementById('white_screen--06').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-  document.getElementById('white_screen--09').style.display = 'block';
-  document.getElementById('white_screen--09').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-
-document.getElementById('black_screen--03').onclick = function() {
-  document.getElementById('white_screen--07').style.display = 'block';
-  document.getElementById('white_screen--07').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-  document.getElementById('white_screen--10').style.display = 'block';
-  document.getElementById('white_screen--10').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-
-document.getElementById('black_screen--03').onclick = function() {
-  document.getElementById('white_screen--08').style.display = 'block';
-  document.getElementById('white_screen--08').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-  document.getElementById('white_screen--11').style.display = 'block';
-  document.getElementById('white_screen--11').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-
-
-document.getElementById('white_screen--09').onclick = function() {
-  document.getElementById('white_screen--01').style.display = 'block';
-  document.getElementById('white_screen--01').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-  document.getElementById('white_screen--03').style.display = 'block';
-  document.getElementById('white_screen--03').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-document.getElementById('white_screen--10').onclick = function() {
-  document.getElementById('white_screen--02').style.display = 'block';
-  document.getElementById('white_screen--02').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-document.getElementById('white_screen--11').onclick = function() {
-  document.getElementById('white_screen--04').style.display = 'block';
-  document.getElementById('white_screen--04').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
-}
-
-
-// кнопка
-document.getElementById('btn_white').onclick = function() { document.getElementById('btn_black').style.display = 'flex';
-document.getElementById('cat_on').style.display = 'block';
-document.getElementById('cat_on').style.animation = `aniCat 1s ease-in 1 forwards`;
- }
-
-
-document.getElementById('btn_black').onclick = function() {
-document.getElementById('btn_black').style.display = 'none'
-document.getElementById('cat_on').style.display = 'none'
-document.getElementById('cat_on').style.animation = `opacityCat 3s ease-in-out 1 forwards`
-}
-
-
-document.getElementById('museum_cup').onclick = function(){
-document.getElementById('museum_cup').style.animation = `fjfj 0.5s ease-in-out 1 forwards`
-}
-
-document.getElementById('museum').onclick = function(){
-document.getElementById('museum_cup').style.animation = `jf 0.5s ease-in-out 1 forwards`
-}
-
-document.getElementById('home_cup').onclick = function(){
-document.getElementById('home_cup').style.animation = `fjfj 0.5s ease-in-out 1 forwards`
-}
-
-document.getElementById('primetnaya_cup').onclick = function(){
-document.getElementById('primetnaya_cup').style.animation = `fjfj 0.5s ease-in-out 1 forwards`
-}
-
-document.getElementById('omen_cup').onclick = function(){
-document.getElementById('omen_cup').style.animation = `fjfj 0.5s ease-in-out 1 forwards`
-}
-
-document.getElementById('time_cup').onclick = function(){
-document.getElementById('time_cup').style.animation = `fjfj 0.5s ease-in-out 1 forwards`
-}
-
-// коты
+// cats_negative
 document.getElementById('cat_first').onclick = function(){
 document.getElementById('second').style.backgroundColor = `white`;
 document.getElementById('cats_all').style.display = 'block'
@@ -167,9 +70,9 @@ document.getElementById('cats_all--02').style.display = 'inline-block'
 document.getElementById('window').style.background = 'linear-gradient(to top, #000000, #FFFFFF)';
 }
 
-// Сколько создавать карт
+// cards
 const CARDS_NUMBER = 36
-// Название файлов с картами
+
 let cards = [
   '../img/1_card.svg',
   '../img/2_card.svg',
@@ -224,7 +127,7 @@ let cards = [
   '../img/12_card.svg',
   '../img/13_card.svg'
 ]
-// Функция, которая перемешивает массив с названиямии
+
 function shuffle(cards) {
   for (let i = cards.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -232,17 +135,13 @@ function shuffle(cards) {
   }
   return cards
 }
-// Применяем функцию перемешивания
+
 cards = shuffle(cards)
 
-// Находим контейнер для карт
-// Он нам нужен, чтобы в ЦСС все выровнять
 let cardsContainer = document.getElementById('third__cards-container')
-// При помощи цикла создаем карты и вставляем внутрь контейнера
+
 for (let i = 0; i < CARDS_NUMBER; i++) {
   let newCard = document.createElement('img')
-
-
 
   newCard.src = `img/${cards[i]}`
   newCard.classList.add('card')
@@ -251,6 +150,79 @@ for (let i = 0; i < CARDS_NUMBER; i++) {
 
   }
   cardsContainer.append(newCard)
+}
+
+
+// screen_generator
+document.getElementById('white_screen--02').onclick = function() {
+  document.getElementById('black_screen--01').style.display = 'block';
+  document.getElementById('black_screen--04').style.display = 'block';
+}
+
+document.getElementById('white_screen--03').onclick = function() {
+  document.getElementById('black_screen--02').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('black_screen--04').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('white_screen--04').onclick = function() {
+  document.getElementById('black_screen--03').style.display = 'block';
+  document.getElementById('black_screen--02').style.display = 'block';
+}
+
+document.getElementById('black_screen--01').onclick = function() {
+  document.getElementById('white_screen--05').style.display = 'block';
+  document.getElementById('white_screen--05').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('black_screen--02').onclick = function() {
+  document.getElementById('white_screen--06').style.display = 'block';
+  document.getElementById('white_screen--06').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--09').style.display = 'block';
+  document.getElementById('white_screen--09').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('black_screen--03').onclick = function() {
+  document.getElementById('white_screen--07').style.display = 'block';
+  document.getElementById('white_screen--07').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--10').style.display = 'block';
+  document.getElementById('white_screen--10').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('black_screen--03').onclick = function() {
+  document.getElementById('white_screen--08').style.display = 'block';
+  document.getElementById('white_screen--08').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--11').style.display = 'block';
+  document.getElementById('white_screen--11').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('white_screen--09').onclick = function() {
+  document.getElementById('white_screen--01').style.display = 'block';
+  document.getElementById('white_screen--01').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+  document.getElementById('white_screen--03').style.display = 'block';
+  document.getElementById('white_screen--03').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('white_screen--10').onclick = function() {
+  document.getElementById('white_screen--02').style.display = 'block';
+  document.getElementById('white_screen--02').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+document.getElementById('white_screen--11').onclick = function() {
+  document.getElementById('white_screen--04').style.display = 'block';
+  document.getElementById('white_screen--04').style.transform =  `translate(${anime.random(-25,55)}vw,${anime.random(15,35)}vh) rotate(${anime.random(0, 0)}deg)`;
+}
+
+
+// btn
+document.getElementById('btn_white').onclick = function() { document.getElementById('btn_black').style.display = 'flex';
+document.getElementById('cat_on').style.display = 'block';
+document.getElementById('cat_on').style.animation = `aniCat 1s ease-in 1 forwards`;
+ }
+
+document.getElementById('btn_black').onclick = function() {
+document.getElementById('btn_black').style.display = 'none'
+document.getElementById('cat_on').style.display = 'none'
+document.getElementById('cat_on').style.animation = `opacityCat 3s ease-in-out 1 forwards`
 }
 
 
@@ -310,3 +282,25 @@ duration: $section62.getBoundingClientRect().height
 .on('progress', function(event) {
 sings2Anim.seek(sings2Anim.duration * event.progress)
 })
+
+
+//disappears
+document.getElementById('museum_cup').onclick = function(){
+document.getElementById('museum_cup').style.animation = `disappears 0.5s ease-in-out 1 forwards`
+}
+
+document.getElementById('home_cup').onclick = function(){
+document.getElementById('home_cup').style.animation = `disappears 0.5s ease-in-out 1 forwards`
+}
+
+document.getElementById('primetnaya_cup').onclick = function(){
+document.getElementById('primetnaya_cup').style.animation = `disappears 0.5s ease-in-out 1 forwards`
+}
+
+document.getElementById('omen_cup').onclick = function(){
+document.getElementById('omen_cup').style.animation = `disappears 0.5s ease-in-out 1 forwards`
+}
+
+document.getElementById('time_cup').onclick = function(){
+document.getElementById('time_cup').style.animation = `disappears 0.5s ease-in-out 1 forwards`
+}
